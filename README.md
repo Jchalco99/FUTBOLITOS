@@ -1,10 +1,9 @@
 1. clonar proyecto
-git clone https://github.com/jfarfannet/flask-poo-v1
+git clone https://github.com/Jchalco99/FUTBOLITOS.git
 
 2. instalar virtualenv
 *py -m pip install --user virtualenv
 *py -m pip install virtualenv
-
 
 3.crear virtual llamando env
 virtualenv env
