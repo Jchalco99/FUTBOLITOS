@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/team.css')}}">
+
+<section id="header" class="cd-secondary-nav">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#dropdown-thumbnail-preview">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><span class="well_2">FUT</span>BOLITOS <span
+                            class="well_1"><i class="fa fa-dribbble"></i></span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="dropdown-thumbnail-preview">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/" class="hvr-underline-from-center">INICIO</a></li>
+                        <li><a href="/positions/" class="hvr-underline-from-center">POSICIONES</a></li>
+                        <li class="active"><a href="/teams/" class="hvr-underline-from-center">EQUIPOS</a></li>
+                        <li><a href="statistics.html" class="hvr-underline-from-center">ESTADISTICAS</a></li>
+                        <li><a href="blog.html" class="hvr-underline-from-center">BLOG</a></li>
+                        <li><a href="bets.html" class="hvr-underline-from-center">APUESTAS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</section>
+<section id="layout" class="clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                {% for row in data %}
+                <div class="col-sm-3">
+                    <div class="layout_2">
+                        <p><a href="/teams/players/{{ row[0] }}/"><img src="{{ row[3] }}" alt="abc" class="img_responsive" style="width: 265px; height: 265px;"></a></p>
+                    </div>
+                    <div class="layout_main clearfix">
+                        <div class="layout_3">
+                            <h3>{{ row[1] }}</h3>
+                            <p>{{ row[0] }}</p>
+                        </div>
+                        <div class="layout_4">
+                            <p>{{ row[2] }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

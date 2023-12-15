@@ -1,0 +1,136 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container">
+    <section class="content">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <center>
+                    <h3 class="box-teatle">Actualizar equipo</h3>
+                </center>
+            </div>
+
+            <form class="form-horizontal" method="POST" action="/positions/update/updatePositions">
+                {% for row in data %}
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Posicion</label>
+
+                        <div class="col-sm-10">
+                            <input name="posicion" value="{{ row[0] }}" type="text" class="form-control" placeholder="Posicion"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Equipo</label>
+
+                        <div class="col-sm-10">
+                            <input name="idEquipo" value="{{ row[1] }}" type="text" class="form-control" placeholder="Equipo"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Partidos jugados</label>
+
+                        <div class="col-sm-10">
+                            <input name="pjugados" value="{{ row[2] }}" type="text" class="form-control" placeholder="Partidos jugados"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Partidos ganados</label>
+
+                        <div class="col-sm-10">
+                            <input name="pganados" value="{{ row[3] }}" type="text" class="form-control" placeholder="Partidos ganados"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Partidos empatados</label>
+
+                        <div class="col-sm-10">
+                            <input name="pempatados" value="{{ row[4] }}" type="text" class="form-control" placeholder="Partidos empatados"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Partidos Perdidos</label>
+
+                        <div class="col-sm-10">
+                            <input name="pperdidos" value="{{ row[5] }}" type="text" class="form-control" placeholder="Partidos Perdidos"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Goles a favor</label>
+
+                        <div class="col-sm-10">
+                            <input name="gfavor" value="{{ row[6] }}" type="text" class="form-control" placeholder="Goles a favor"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Goles en contra</label>
+
+                        <div class="col-sm-10">
+                            <input name="gcontra" value="{{ row[7] }}" type="text" class="form-control" placeholder="Goles en contra"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Diferencia de goles</label>
+
+                        <div class="col-sm-10">
+                            <input name="diferencia" value="{{ row[8] }}" type="text" class="form-control" placeholder="Diferencia de goles"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Puntos</label>
+
+                        <div class="col-sm-10">
+                            <input name="puntos" value="{{ row[9] }}" type="text" class="form-control" placeholder="Puntos"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-footer">
+                    <a href="/positions/"><button type="button" class="btn btn-default">Cancel</button></a>
+                    <input name="update" type="submit" class="btn btn-info pull-right" value="Update">
+                </div>
+                {% endfor %}
+            </form>
+        </div>
+    </section>
+</div>
+
+{% endblock %}

@@ -1,0 +1,251 @@
+/*
+Template Name:FootBaller
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+
+
+/********************* blog_main ****************/
+#blog_main{ 
+ background-color: #da0c06;
+ padding-top: 13px;
+ padding-bottom: 13px;
+ }
+.blog_main_1 li{ 
+ display:inline;
+ margin-right:10px;
+ font-size:19px;
+ color:#999;
+ }
+.blog_main_1 a{ 
+ font-size: 26px;
+ color: #fff;
+ }
+/********************* blog_main_end ****************/
+/********************* gallery ****************/
+#gallery{ 
+ padding-top: 30px;
+ padding-bottom:15px;
+   }
+#gallery .ih-item {
+  position: relative;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+#gallery .ih-item,
+#gallery .ih-item * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#gallery .ih-item a {
+  color: #333;
+}
+#gallery .ih-item a:hover {
+  text-decoration: none;
+}
+#gallery .ih-item img {
+  width: 100%;
+  height: 100%;
+}
+
+#gallery .ih-item.square {
+  position: relative;
+  width: 348px;
+  height: 250px;
+}
+#gallery .ih-item.square .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#gallery .ih-item.square.effect12 {
+  overflow: hidden;
+}
+#gallery .ih-item.square.effect12.colored .info {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+#gallery .ih-item.square.effect12.colored .info h3 {
+  background: rgba(12, 34, 52, 0.6);
+}
+#gallery .ih-item.square.effect12 .img {
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+#gallery .ih-item.square.effect12 .info {
+  background: #333333;
+  background: rgba(218, 12, 6, 0.64);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+#gallery .ih-item.square.effect12 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #111111;
+  margin: 30px 0 0 0;
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+#gallery .ih-item.square.effect12 .info p {
+  font-style: italic;
+  font-size:20px;
+  position: relative;
+  color: #fff;
+  padding: 20px 20px 20px;
+  text-align: center;
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+#gallery .ih-item.square.effect12 a:hover .info {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+#gallery .ih-item.square.effect12 a:hover .info h3 {
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+#gallery .ih-item.square.effect12 a:hover .info p {
+  -webkit-transition-delay: 0.25s;
+  -moz-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+#gallery .ih-item.square.effect12.left_to_right .info {
+  -webkit-transform: translate(-460px, -100px) rotate(-180deg);
+  -moz-transform: translate(-460px, -100px) rotate(-180deg);
+  -ms-transform: translate(-460px, -100px) rotate(-180deg);
+  -o-transform: translate(-460px, -100px) rotate(-180deg);
+  transform: translate(-460px, -100px) rotate(-180deg);
+}
+#gallery .ih-item.square.effect12.left_to_right .info h3 {
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  transform: translateY(-100px);
+}
+#gallery .ih-item.square.effect12.left_to_right .info p {
+  -webkit-transform: translateX(-300px) rotate(-90deg);
+  -moz-transform: translateX(-300px) rotate(-90deg);
+  -ms-transform: translateX(-300px) rotate(-90deg);
+  -o-transform: translateX(-300px) rotate(-90deg);
+  transform: translateX(-300px) rotate(-90deg);
+}
+#gallery .ih-item.square.effect12.left_to_right a:hover .info {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+#gallery .ih-item.square.effect12.left_to_right a:hover .info h3 {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+#gallery .ih-item.square.effect12.left_to_right a:hover .info p {
+  -webkit-transform: translateX(0px) rotate(0deg);
+  -moz-transform: translateX(0px) rotate(0deg);
+  -ms-transform: translateX(0px) rotate(0deg);
+  -o-transform: translateX(0px) rotate(0deg);
+  transform: translateX(0px) rotate(0deg);
+}
+.gallery_2 h3{ 
+padding-top:15px;
+  }
+.gallery_2 h3 a{ 
+text-decoration:none;
+color: #da0c06;
+font-size: 33px;
+line-height: 1;
+letter-spacing:2px;
+  }
+.gallery_2 h3 a:hover{ 
+color:#000000;
+  }
+.gallery_2 p {
+color: #7E7C7C;
+font-size: 20px;
+line-height: 1.7;
+padding-left:10px;
+padding-bottom:10px;
+padding-right:10px;
+}
+.gallery_2{
+border:1px solid #CCCCCC;
+margin-bottom:15px;
+ }
+.gallery_3 h2{ 
+color: #1a1a1a;
+font-size: 40px;
+line-height: 1.2;
+font-weight:bold;
+padding-bottom:10px;
+   }
+/********************* gallery_end ****************/
+
+
+
+@media screen and (max-width : 767px){
+#blog_main {
+ text-align: center;
+}
+#gallery {
+ text-align: center;
+}
+#gallery .ih-item.square {
+ width: 100%;
+ height: 100%;
+}
+}
+
+@media (min-width:768px) and (max-width:960px) {
+.gallery_2 h3 a {
+ font-size: 25px;
+ letter-spacing: 0px;
+}
+#gallery .ih-item.square {
+ width: 100%;
+ height: 100%;
+}
+} 
+
+@media (min-width:961px) and (max-width:1200px) {
+.gallery_2 h3 a {
+ font-size: 25px;
+ letter-spacing: 0px;
+}
+#gallery .ih-item.square {
+ width: 100%;
+ height: 100%;
+}
+}
+
+@media (min-width:1201px) and (max-width:1320px) {
+
+}

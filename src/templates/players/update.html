@@ -1,0 +1,120 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<section id="header" class="cd-secondary-nav">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#dropdown-thumbnail-preview">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><span class="well_2">FUT</span>BOLITOS <span
+                            class="well_1"><i class="fa fa-dribbble"></i></span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="dropdown-thumbnail-preview">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/" class="hvr-underline-from-center">INICIO</a></li>
+                        <li><a href="/positions/" class="hvr-underline-from-center">POSICIONES</a></li>
+                        <li class="active"><a href="/teams/" class="hvr-underline-from-center">EQUIPOS</a></li>
+                        <li><a href="statistics.html" class="hvr-underline-from-center">ESTADISTICAS</a></li>
+                        <li><a href="blog.html" class="hvr-underline-from-center">BLOG</a></li>
+                        <li><a href="bets.html" class="hvr-underline-from-center">APUESTAS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <section class="content">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <center>
+                    <h3 class="box-teatle">Actualizar jugador</h3>
+                </center>
+            </div>
+            {% for row in data %}
+            <form class="form-horizontal" method="POST" action="/players/updatePlayers">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Apellido</label>
+
+                        <div class="col-sm-10">
+                            <input name="apellido" value="{{ row[1] }}" type="text" class="form-control" placeholder="Equipo"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Nombre</label>
+
+                        <div class="col-sm-10">
+                            <input name="nombre" value="{{ row[2] }}" type="text" class="form-control" placeholder="Partidos jugados"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Posicion</label>
+
+                        <div class="col-sm-10">
+                            <input name="posicion" value="{{ row[3] }}" type="text" class="form-control" placeholder="Partidos ganados"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Nacionalidad</label>
+
+                        <div class="col-sm-10">
+                            <input name="nacionalidad" value="{{ row[4] }}" type="text" class="form-control" placeholder="Partidos empatados"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Goles</label>
+
+                        <div class="col-sm-10">
+                            <input name="goles" value="{{ row[5] }}" type="text" class="form-control" placeholder="Partidos Perdidos"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Asistencias</label>
+
+                        <div class="col-sm-10">
+                            <input name="asistencias" value="{{ row[6] }}" type="text" class="form-control" placeholder="Goles a favor"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Equipo</label>
+
+                        <div class="col-sm-10">
+                            <input name="idEquipo" value="{{ row[7] }}" type="text" class="form-control" placeholder="Goles a favor"
+                                autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <a href="/teams/"><button type="button" class="btn btn-default">Cancel</button></a>
+                    <input name="update" type="submit" class="btn btn-info pull-right" value="Update">
+                </div>
+            {% endfor %}
+            </form>
+            </form>
+        </div>
+    </section>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,145 @@
+/*
+Template Name:FootBaller
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+
+
+/********************* blog_main ****************/
+#blog_main{ 
+ background-color: #da0c06;
+ padding-top: 13px;
+ padding-bottom: 13px;
+ }
+.blog_main_1 li{ 
+ display:inline;
+ margin-right:10px;
+ font-size:19px;
+ color:#999;
+ }
+.blog_main_1 a{ 
+ font-size: 26px;
+ color: #fff;
+ }
+ .hr_1{
+ margin-top: 10px;
+ margin-bottom: 10px;
+ border-top: 1px solid #da0c06;
+ width: 5%;
+ border-width: 2px;
+}
+/********************* blog_main_end ****************/
+/********************* contact ****************/
+#contact{ 
+ padding-top:50px;
+ padding-bottom:50px;
+ }
+.contact_2 h4 {
+ color: #da0c06;
+ font-weight: bold;
+ padding-bottom: 10px;
+}
+.contact_2 h2 a {
+ color: #2d4a8a;
+}
+.contact_4 i{ 
+ background-color:#da0c06;
+ text-align: center;
+ color: #fff;
+ font-size: 25px;
+ border-radius: 50%;
+ width: 2.4em!important;
+ height: 2.4em!important;
+ line-height: 2.5em;
+ }
+.contact_5 h3{ 
+ padding-top:7px;
+ font-weight:bold;
+ }
+.contact_5 p{ 
+ padding:0px;
+ margin:0px;
+ color: #867979;
+ }
+.contact_3{  
+ border-bottom:2px solid #ebebeb;
+ padding-bottom:25px;
+ padding-top:20px;
+ }
+.contact_6{  
+ padding-top:20px;
+ }
+.contact_7 h2 {
+ padding-bottom: 15px;
+} 
+.contact_7 h4 {
+ color: #da0c06;
+ font-weight: bold;
+ padding-bottom: 10px;
+}
+#contact .form-control {
+ font-size: 20px;
+ background-color: #da0c06;
+ color: #fff;
+}
+#contact .form-control::placeholder{
+ color: #fff;
+}
+.contact_8 input {
+ padding-top: 25px;
+ padding-bottom: 25px;
+ margin-bottom: 10px;
+}
+.contact_9 textarea {
+ height: 155px;
+ width: 100%;
+}
+.contact_10 ul{ 
+ padding-top:20px;
+ }
+/********************* contact_end ****************/
+
+
+
+@media screen and (max-width : 767px){
+#blog_main {
+ text-align: center;
+}
+#contact {
+ padding-top: 30px;
+ padding-bottom: 30px;
+ text-align: center;
+}
+}
+
+@media (min-width:768px) and (max-width:960px) {
+.contact_5 h3 {
+ font-size: 18px;
+}
+.contact_4 i {
+ font-size: 15px;
+}
+#contact {
+ padding-top: 30px;
+ padding-bottom: 30px;
+}
+} 
+
+@media (min-width:961px) and (max-width:1200px) {
+.contact_5 h3 {
+ font-size: 18px;
+}
+.contact_4 i {
+ font-size: 15px;
+}
+#contact {
+ padding-top: 30px;
+ padding-bottom: 30px;
+}
+}
+
+@media (min-width:1201px) and (max-width:1320px) {
+
+}
